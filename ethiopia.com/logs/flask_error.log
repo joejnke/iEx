@@ -1529,3 +1529,193 @@ gunicorn.errors.AppImportError: Failed to find application object 'py' in 'publi
 [2019-11-01 16:48:58 +0300] [16940] [INFO] Handling signal: term
 [2019-11-01 16:48:58 +0300] [17476] [INFO] Worker exiting (pid: 17476)
 [2019-11-01 16:48:58 +0300] [16940] [INFO] Shutting down: Master
+[2019-11-01 16:56:15 +0300] [17612] [DEBUG] Current configuration:
+  config: ethiopia_com_gunicorn_config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 1900
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/kirub/iEx/nginx_gunicorn/ethiopia.com
+  daemon: False
+  raw_env: []
+  pidfile: /home/kirub/iEx/nginx_gunicorn/ethiopia.com/logs/flask_pid.pid
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/kirub/iEx/nginx_gunicorn/ethiopia.com/logs/flask_access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s" "%(m)s" "%(U)s" "%(q)s" "%(H)s" %(B)s %(T)s %(p)s "%({Header}i)s" "%({Header}o)s" "%({Header}e)s"
+  errorlog: /home/kirub/iEx/nginx_gunicorn/ethiopia.com/logs/flask_error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: public.run:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fc089de7b70>
+  on_reload: <function OnReload.on_reload at 0x7fc089de7c80>
+  when_ready: <function WhenReady.when_ready at 0x7fc089de7d90>
+  pre_fork: <function Prefork.pre_fork at 0x7fc089de7ea0>
+  post_fork: <function Postfork.post_fork at 0x7fc089e01048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc089e01158>
+  worker_int: <function WorkerInt.worker_int at 0x7fc089e01268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc089e01378>
+  pre_exec: <function PreExec.pre_exec at 0x7fc089e01488>
+  pre_request: <function PreRequest.pre_request at 0x7fc089e01598>
+  post_request: <function PostRequest.post_request at 0x7fc089e01620>
+  child_exit: <function ChildExit.child_exit at 0x7fc089e01730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc089e01840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc089e01950>
+  on_exit: <function OnExit.on_exit at 0x7fc089e01a60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2019-11-01 16:56:15 +0300] [17612] [INFO] Starting gunicorn 19.9.0
+[2019-11-01 16:56:15 +0300] [17612] [DEBUG] Arbiter booted
+[2019-11-01 16:56:15 +0300] [17612] [INFO] Listening at: http://127.0.0.1:8000 (17612)
+[2019-11-01 16:56:15 +0300] [17612] [INFO] Using worker: sync
+[2019-11-01 16:56:15 +0300] [17615] [INFO] Booting worker with pid: 17615
+[2019-11-01 16:56:15 +0300] [17612] [DEBUG] 1 workers
+[2019-11-01 16:56:33 +0300] [17615] [DEBUG] GET /
+[2019-11-01 16:56:42 +0300] [17615] [DEBUG] GET /
+[2019-11-01 17:02:59 +0300] [17612] [INFO] Handling signal: term
+[2019-11-01 17:02:59 +0300] [17615] [INFO] Worker exiting (pid: 17615)
+[2019-11-01 17:02:59 +0300] [17612] [INFO] Shutting down: Master
+[2019-11-01 17:11:56 +0300] [17920] [DEBUG] Current configuration:
+  config: ethiopia_com_gunicorn_config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 1900
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/kirub/iEx/nginx_gunicorn/ethiopia.com
+  daemon: False
+  raw_env: []
+  pidfile: /home/kirub/iEx/nginx_gunicorn/ethiopia.com/logs/flask_pid.pid
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/kirub/iEx/nginx_gunicorn/ethiopia.com/logs/flask_access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s" "%(m)s" "%(U)s" "%(q)s" "%(H)s" %(B)s %(T)s %(p)s "%({Header}i)s" "%({Header}o)s" "%({Header}e)s"
+  errorlog: /home/kirub/iEx/nginx_gunicorn/ethiopia.com/logs/flask_error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: public.run:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fcfdd0c2b70>
+  on_reload: <function OnReload.on_reload at 0x7fcfdd0c2c80>
+  when_ready: <function WhenReady.when_ready at 0x7fcfdd0c2d90>
+  pre_fork: <function Prefork.pre_fork at 0x7fcfdd0c2ea0>
+  post_fork: <function Postfork.post_fork at 0x7fcfdd0dc048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fcfdd0dc158>
+  worker_int: <function WorkerInt.worker_int at 0x7fcfdd0dc268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fcfdd0dc378>
+  pre_exec: <function PreExec.pre_exec at 0x7fcfdd0dc488>
+  pre_request: <function PreRequest.pre_request at 0x7fcfdd0dc598>
+  post_request: <function PostRequest.post_request at 0x7fcfdd0dc620>
+  child_exit: <function ChildExit.child_exit at 0x7fcfdd0dc730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fcfdd0dc840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fcfdd0dc950>
+  on_exit: <function OnExit.on_exit at 0x7fcfdd0dca60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2019-11-01 17:11:56 +0300] [17920] [INFO] Starting gunicorn 19.9.0
+[2019-11-01 17:11:56 +0300] [17920] [DEBUG] Arbiter booted
+[2019-11-01 17:11:56 +0300] [17920] [INFO] Listening at: http://127.0.0.1:8000 (17920)
+[2019-11-01 17:11:56 +0300] [17920] [INFO] Using worker: sync
+[2019-11-01 17:11:56 +0300] [17924] [INFO] Booting worker with pid: 17924
+[2019-11-01 17:11:56 +0300] [17920] [DEBUG] 1 workers
+[2019-11-01 17:25:13 +0300] [17924] [DEBUG] GET /favicon.ico
+[2019-11-01 17:25:13 +0300] [17924] [DEBUG] Ignoring EPIPE
+[2019-11-01 17:25:22 +0300] [17924] [DEBUG] GET /
+[2019-11-01 17:25:22 +0300] [17924] [DEBUG] GET /favicon.ico
+[2019-11-01 17:25:22 +0300] [17924] [DEBUG] Ignoring EPIPE
+[2019-11-01 17:25:26 +0300] [17924] [DEBUG] GET /
+[2019-11-01 17:25:29 +0300] [17924] [DEBUG] GET /
+[2019-11-01 17:25:39 +0300] [17924] [DEBUG] GET /favicon.ico
+[2019-11-01 17:25:47 +0300] [17924] [DEBUG] GET /favicon.ico
