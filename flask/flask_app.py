@@ -1,11 +1,11 @@
-from flask import Flask, url_for, redirect, request
+from flask import Flask, url_for, redirect, request, render_template
 
 app = Flask(__name__)
 
 
 @app.route('/<name>')
 def hello_world(name):
-    return "Hello - %s" % name
+    return render_template('hello.html', name=name)
 
 
 @app.route('/blog/<int:postID>')
@@ -49,6 +49,12 @@ def login():
     else:
         user = request.args.get('nm')
         return redirect(url_for('success', name=user))
+
+
+@app.route('/result')
+def result():
+    result_dict = {'phy': 50, 'che': 60, 'maths': 70}
+    return render_template('result.html', result=result_dict)
 
 
 if __name__ == '__main__':
