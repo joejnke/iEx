@@ -41,6 +41,11 @@ def success(name):
     return 'welcome %s' % name
 
 
+@app.route('/login_form/')
+def login_form():
+    return render_template('login.html')
+
+
 @app.route('/login', methods=['POST', 'GET'])
 def login():
     if request.method == 'POST':
