@@ -1,6 +1,6 @@
+import sys
 import pandas as pd
 import matplotlib.pyplot as plt
-
 
 def stat_vis():
     names = ['mem_usage', 'cpu_usage', 'hdd_usage', 'network_usage']  # first row of the csv file, if available
