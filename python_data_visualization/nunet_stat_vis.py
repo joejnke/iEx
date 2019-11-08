@@ -13,7 +13,7 @@ def load_json(f_name):
 
 def stat_vis():
     cmd_in_parser = argparse.ArgumentParser(description="python statistical graph visualizer for nunet.io")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-    cmd_in_parser.add_argument("--f_name", required=True, help=".csv file name")
+    cmd_in_parser.add_argument("--f_name", required=True, help=".json file name")
     cmd_in_parser.add_argument("--plot", default="all",
                                choices=['cpu_percentage',
                                         'memory_percentage',
