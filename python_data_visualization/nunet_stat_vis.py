@@ -1,8 +1,9 @@
-import argparse
+from argparse import ArgumentParser
 import pandas as pd
 import matplotlib.pyplot as plt
 from statistics import mean
 from math import ceil
+
 
 def load_json(f_name):
     with open(f_name, 'r') as f:
@@ -13,7 +14,7 @@ def load_json(f_name):
 
 
 def stat_vis():
-    cmd_in_parser = argparse.ArgumentParser(description="python statistical graph visualizer for nunet.io")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+    cmd_in_parser = ArgumentParser(description="python statistical graph visualizer for nunet.io")
     cmd_in_parser.add_argument("--f_name", required=True, help=".json file name")
     cmd_in_parser.add_argument("--plot", default="all",
                                choices=['cpu_percentage',
@@ -94,9 +95,9 @@ def stat_vis():
     # plt.tight_layout()
     # plt.show()
 
-
     if cmd_args.plot == "all":
-        nunet_stat.plot.line(subplots=True, layout=(3, 1), figsize=(10, 10))
+        nunet_stat = nunet_stat.drop(columns='cpu_percentage')
+        nunet_stat.plot.line(subplots=True, layout=(nunet_stat.shape[1], 1), figsize=(10, 10))
     else:
         nunet_stat[[cmd_args.plot]].plot.line()  # plot only told to plot
 
